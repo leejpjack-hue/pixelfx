@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTML Motion — fight composer</title>
+<meta name="description" content="Open a plate pack, nudge cam and timing, Compose, then Play. Live preview stays honest.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#05090c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%2305090c'/%3E%3Crect x='4' y='4' width='8' height='8' rx='1' fill='%2377ffdd'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<header class="top">
+  <nav class="nav" aria-label="Primary">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <span>HTML Motion</span>
+    </div>
+    <div class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#plate-packs">Plate packs</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a class="cta" href="https://html-motion-composer.leejpjack.workers.dev/ui/">Open fight</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Ship fight cuts in <span class="line">under 60 seconds</span></h1>
+      <p class="lede">Open a plate pack, nudge cam and timing, Compose, then Play. Live preview stays honest. FX shows after Compose.</p>
+      <a class="cta cta-lg" href="https://html-motion-composer.leejpjack.workers.dev/ui/">Open fight</a>
+      <p class="proof">Built for Jack speed plate pack testing</p>
+    </div>
+
+    <figure class="mock" id="plate-packs" aria-label="Composer preview. Live plates and cam. FX appears after Compose.">
+      <div class="m-bar">
+        <div class="m-file">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="mono">pack_neon_alley_brawl_take03.htm</span>
+        </div>
+        <div class="m-actions">
+          <a class="btn" href="https://html-motion-composer.leejpjack.workers.dev/ui/">Open fight</a>
+          <span class="btn btn-acc">Compose</span>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-top">
+          <span class="chip mono">00:01:24:12</span>
+          <span class="chip chip-live">Plates live</span>
+          <span class="chip chip-cam mono">CAM_02 [DYNAMIC_TIGHT]</span>
+        </div>
+        <div class="stage-scene">
+        <svg viewBox="0 0 640 320" role="img" aria-label="Two fighters, tracking lock on the strike, no FX yet">
+          <line x1="36" y1="268" x2="604" y2="268" stroke="#1c3a45" stroke-width="1.5"/>
+          <line x1="120" y1="268" x2="210" y2="214" stroke="#1c3a45" stroke-dasharray="2 4"/>
+          <line x1="520" y1="268" x2="430" y2="214" stroke="#1c3a45" stroke-dasharray="2 4"/>
+          <rect x="168" y="48" width="304" height="196" fill="none" stroke="#1c3a45" stroke-dasharray="6 6"/>
+          <text x="176" y="64" fill="#7fa9a6" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11">TRACKING_LOCK: TARGET_01</text>
+          <path d="M248 118c0-12 8-22 18-22s18 10 18 22-8 22-18 22-18-10-18-22z" fill="#0f2129" stroke="#1c3a45" stroke-width="1.5"/>
+          <path d="M266 140l6 58-38 62m38-62 28 54M266 156l86-8" fill="none" stroke="#7fa9a6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+          <path d="M286 154c28-10 58-6 86 4" fill="none" stroke="#19e0d0" stroke-dasharray="4 3" stroke-width="2"/>
+          <circle cx="372" cy="156" r="16" fill="none" stroke="#ff8a1e" stroke-dasharray="2 2" class="ring"/>
+          <circle cx="372" cy="156" r="6" fill="#ff8a1e"/>
+          <path d="M404 112c0-12 8-22 18-22s18 10 18 22-8 22-18 22-18-10-18-22z" fill="#0f2129" stroke="#1c3a45" stroke-width="1.5"/>
+          <path d="M422 134l-12 62-28 64m28-64 32 58M422 152l-46 8" fill="none" stroke="#7fa9a6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+        </svg>
+        <p class="banner"><span class="dot" aria-hidden="true"></span>Compose to see FX</p>
+        </div>
+      </div>
+
+      <div class="strip" role="list" aria-label="Plate strip">
+        <div class="plate" role="listitem">
+          <span class="mono dim">01 · 0.8s</span>
+          <span class="plate-name">PL_01: Lead Hook</span>
+          <span class="bar"><i style="width:100%"></i></span>
+        </div>
+        <div class="plate is-on" role="listitem" aria-current="true">
+          <span class="mono acc">02 · 1.2s<span class="pip" aria-hidden="true"></span></span>
+          <span class="plate-name">PL_02: Slip &amp; Counter</span>
+          <span class="bar"><i class="on" style="width:75%"></i></span>
+        </div>
+        <div class="plate" role="listitem">
+          <span class="mono dim">03 · 1.4s</span>
+          <span class="plate-name">PL_03: Double Kick</span>
+          <span class="bar"><i style="width:50%"></i></span>
+        </div>
+        <div class="plate" role="listitem">
+          <span class="mono dim">04 · 0.9s</span>
+          <span class="plate-name">PL_04: Reversal</span>
+          <span class="bar"><i class="idle" style="width:33%"></i></span>
+        </div>
+      </div>
+
+      <div class="beat">
+        <p class="beat-label">Beat focus</p>
+        <div class="beat-grid">
+          <div class="readout">
+            <span class="dim">Cam nudge</span>
+            <strong>X: +14, Y: −02, FOV: 72°</strong>
+          </div>
+          <div class="readout">
+            <span class="dim">Timing</span>
+            <strong>+4f lead, 18f hold, ease-out</strong>
+          </div>
+          <div class="readout">
+            <span class="dim">Swap plate</span>
+            <strong class="mono">pack_03_altB.plt</strong>
+          </div>
+        </div>
+        <p class="collapsed">Atom Picker collapsed</p>
+      </div>
+
+      <div class="dock" role="group" aria-label="Dock">
+        <div class="dock-btns">
+          <span class="btn btn-acc">Compose</span>
+          <span class="btn">Play</span>
+          <span class="btn is-dim">Pause</span>
+        </div>
+        <label class="scrub">
+          <span class="scrub-name">Scrub</span>
+          <span class="mono dim">00:01:24</span>
+          <input type="range" min="0" max="250" value="84" aria-valuemin="0" aria-valuemax="250" aria-valuenow="84" aria-valuetext="1 minute 24 seconds">
+          <span class="mono dim">00:04:10</span>
+        </label>
+      </div>
+    </figure>
+  </section>
+
+  <section class="tagline" aria-label="Tagline">
+    <p>Change one plate. Nudge one cam.</p>
+    <p class="see">See the cut.</p>
+  </section>
+
+  <section class="block" id="overview">
+    <p class="eyebrow">Benefits</p>
+    <h2>Engineered for speed, stripped of clutter</h2>
+    <div class="cards">
+      <article class="card">
+        <span class="icon icon-lib" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M13 3 6 13h5l-1 8 8-12h-5l0-6z" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>Open last fight in one click</h3>
+        <p>Pinned and recent plate packs on land.</p>
+      </article>
+      <article class="card">
+        <span class="icon icon-acc" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 7h16M4 12h10M4 17h13" stroke-linecap="round"/><circle cx="16" cy="7" r="2" fill="#0f2129"/><circle cx="10" cy="12" r="2" fill="#0f2129"/><circle cx="17" cy="17" r="2" fill="#0f2129"/></svg>
+        </span>
+        <h3>Beat focus stays quiet</h3>
+        <p>Strip, cam, timing, swap only. Atom Picker collapsed.</p>
+      </article>
+      <article class="card">
+        <span class="icon icon-hero" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 17h3M14 17h2" stroke-linecap="round"/><path d="M6 14V9h12v5" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>Dock is the stage</h3>
+        <p>Compose, Play, Pause, scrub with plain labels.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="workflow">
+    <p class="eyebrow">How it works</p>
+    <h2>Three steps from plate to playback</h2>
+    <ol class="steps">
+      <li>
+        <span class="num">01</span>
+        <h3>Open fight from pinned or recent</h3>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <h3>Tweak plate, cam, timing in Beat focus</h3>
+      </li>
+      <li>
+        <span class="num num-hero">03</span>
+        <h3>Compose and Play — FX honesty banner when needed</h3>
+      </li>
+    </ol>
+  </section>
+
+  <section class="final" aria-label="Open fight">
+    <div class="final-panel">
+      <h2>Ready to cut.</h2>
+      <a class="cta cta-lg" href="https://html-motion-composer.leejpjack.workers.dev/ui/">Open fight</a>
+      <p class="proof">Built for Jack speed plate pack testing</p>
+    </div>
+  </section>
+
+  <section class="block faq" id="faq">
+    <p class="eyebrow">Frequently asked questions</p>
+    <h2>Frequently asked questions</h2>
+    <div class="faq-list">
+      <article>
+        <h3>What is HTML Motion?</h3>
+        <p>A dark teal fight composer and player for plate pack testing: open a fight, tweak, Compose, Play.</p>
+      </article>
+      <article>
+        <h3>Do I see full FX live?</h3>
+        <p>No. Live preview is honest about cam and plates. FX appears after Compose, with a clear banner when needed.</p>
+      </article>
+      <article>
+        <h3>What is Beat focus?</h3>
+        <p>A quiet control zone: plate strip, cam, timing, and swap only. Atom Picker stays collapsed.</p>
+      </article>
+      <article>
+        <h3>Where do I start?</h3>
+        <p>Land shows pinned and recent plate packs. One click opens the last fight.</p>
+      </article>
+      <article>
+        <h3>What do the dock buttons say?</h3>
+        <p>Plain English: Compose, Play, Pause, scrub. No cryptic transport shorthand.</p>
+      </article>
+      <article>
+        <h3>Is this a public marketing site?</h3>
+        <p>No. This landing is for the Jack seat and testers.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">HTML Motion · internal · noindex</footer>
+</body>
+</html>
