@@ -1,0 +1,74 @@
+[
+  {
+    "id": "impacts/hit-spark",
+    "role": "Action",
+    "label": "Hit spark",
+    "notes": "Everyday contact spark. Place at the strike point: cross flare, then sparks and hot chips along the blow."
+  },
+  {
+    "id": "impacts/blunt-hit",
+    "role": "Action",
+    "label": "Blunt hit",
+    "notes": "Soft or heavy thud. Warm blob, inked wedges, and a dust puff for fists, clubs, and body checks."
+  },
+  {
+    "id": "impacts/crit-hit",
+    "role": "Action",
+    "label": "Critical hit",
+    "notes": "Hard starburst for a clean or heavy connect. Ring breaks, sparks streak, shards drop."
+  },
+  {
+    "id": "impacts/hit-flash",
+    "role": "Reaction",
+    "label": "Hit flash",
+    "notes": "Defender damage flash. White frame, red flush, blink, and comic hit lines on the body that was struck."
+  },
+  {
+    "id": "impacts/impact-frame",
+    "role": "Action",
+    "label": "Impact frame",
+    "notes": "Full-frame anime speed lines on a beat. Screen-sized and short: white burst, invert, then the lines pull out."
+  },
+  {
+    "id": "impacts/parry",
+    "role": "Reaction",
+    "label": "Parry",
+    "notes": "Clash or block. Blade edges flash in an X, a four-point star rings, gold sparks rain."
+  },
+  {
+    "id": "impacts/ground-slam",
+    "role": "Aftermath",
+    "label": "Ground slam",
+    "notes": "After a body hits the street. Floor flash, cracks, two shockwaves, dust column, rocks settle."
+  },
+  {
+    "id": "impacts/heavy-landing",
+    "role": "Aftermath",
+    "label": "Heavy landing",
+    "notes": "Landing dust under the feet. Floor dents and cracks; two dust rings roll out with the landing body."
+  },
+  {
+    "id": "melee/uppercut",
+    "role": "Action",
+    "label": "Uppercut",
+    "notes": "Rising chin strike. Crescent climbs past the face and a comic star bursts at the top."
+  },
+  {
+    "id": "explosions/cartoon-pow",
+    "role": "Action",
+    "label": "Cartoon POW",
+    "notes": "Readable comic hit. Jagged burst, POW lettering, and action lines on the beat."
+  },
+  {
+    "id": "explosions/dirt-explosion",
+    "role": "Aftermath",
+    "label": "Dirt explosion",
+    "notes": "Street grit. Buried flash, dirt clods, a brown dust plume, and a crater left behind."
+  },
+  {
+    "id": "explosions/smoke-bomb",
+    "role": "Aftermath",
+    "label": "Smoke bomb",
+    "notes": "Smoke cover after a break or vanish. Canister drops, pops, and the cloud thins to wisps."
+  }
+]
