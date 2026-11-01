@@ -86,6 +86,7 @@ a { color: inherit; }
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
+  white-space: nowrap;
 }
 .nav-links a:hover { color: var(--ink); }
 
@@ -503,6 +504,11 @@ a { color: inherit; }
   color: var(--dim);
   font: 400 12px/1.4 var(--mono);
 }
+.foot a, .wave-link {
+  color: var(--acc);
+  text-decoration: none;
+}
+.foot a:hover, .wave-link:hover { text-decoration: underline; }
 
 @media (max-width: 960px) {
   .hero, .cards, .steps { grid-template-columns: 1fr; }
